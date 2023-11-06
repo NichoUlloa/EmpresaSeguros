@@ -146,5 +146,4 @@ public class EmpresaDeSeguros {
             System.out.println("El cliente no existe");
         }
     }
-
 }
