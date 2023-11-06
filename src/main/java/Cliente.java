@@ -62,5 +62,3 @@ public class Cliente {
                 "Nacionalidad: " + nacionalidad + "\n";
     }
 }
-
-//asd
