@@ -39,4 +39,5 @@ public class Principal {
         System.out.println("Buscar vendedor por rut:");
         System.out.println(empresa.buscarVendedor("66.666.666-6"));
     }
+
 }
