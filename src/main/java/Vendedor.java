@@ -1,54 +1,27 @@
-public class Vendedor {
-    private String nombreVendedor;
-    private String rutVendedor;
-    private int numeroTelefonico;
-    private String nacionalidad;
+public class Vendedor extends Persona {
+    private int antiguedadVendedorAnios;
 
-    public Vendedor(String nombreVendedor, String rut, int numeroTelefonico, String nacionalidad) {
-        this.nombreVendedor = nombreVendedor;
-        this.rutVendedor = rut;
-        this.numeroTelefonico = numeroTelefonico;
-        this.nacionalidad = nacionalidad;
+    public Vendedor(int antiguedadVendedorAnios, String nombre, int edad, String rut, int numeroTelefonico, String nacionalidad) {
+        super(nombre, edad, rut, numeroTelefonico, nacionalidad);
+        this.antiguedadVendedorAnios = antiguedadVendedorAnios;
     }
 
-    public String getNombreVendedor() {
-        return this.nombreVendedor;
+    public int getAntiguedadVendedorAnios() {
+        return this.antiguedadVendedorAnios;
     }
 
-    public String getRut() {
-        return this.rutVendedor;
-    }
-
-    public int getNumeroTelefonico() {
-        return this.numeroTelefonico;
-    }
-
-    public String getNacionalidad() {
-        return this.nacionalidad;
-    }
-
-    public void setNombreVendedor(String nombreVendedor) {
-        this.nombreVendedor = nombreVendedor;
-    }
-
-    public void setRut(String rut) {
-        this.rutVendedor = rut;
-    }
-
-    public void setNumeroTelefonico(int numeroTelefonico) {
-        this.numeroTelefonico = numeroTelefonico;
-    }
-
-    public void setNacionalidad(String nacionalidad) {
-        this.nacionalidad = nacionalidad;
+    public void setAntiguedadVendedorAnios(int antiguedadVendedorAnios) {
+        this.antiguedadVendedorAnios = antiguedadVendedorAnios;
     }
 
     @Override
     public String toString() {
         return "Vendedor:\n" +
-                "Nombre vendedor: " + nombreVendedor + "\n" +
-                "Rut vendedor: " + rutVendedor + "\n" +
-                "Numero telefonico: " + numeroTelefonico + "\n" +
-                "Nacionalidad: " + nacionalidad + "\n";
+                "Nombre: " + getNombre() + "\n" +
+                "Edad: " + getEdad() + "\n" +
+                "Rut: " + getRut() + "\n" +
+                "Numero telefonico: " + getNumeroTelefonico() + "\n" +
+                "Nacionalidad: " + getNacionalidad() + "\n" +
+                "Antiguedad: " + antiguedadVendedorAnios + "\n";
     }
 }

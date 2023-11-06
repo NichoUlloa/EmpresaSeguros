@@ -117,7 +117,7 @@ public class EmpresaDeSeguros {
 
     public void buscarClientesTerceraEdad() {
         for (Cliente cliente : this.clientes) {
-            if (cliente.getEdadCliente() > 60) {
+            if (cliente.getEdad() > 60) {
                 System.out.println(cliente);
             }
         }
