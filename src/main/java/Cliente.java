@@ -25,3 +25,4 @@ public class Cliente extends Persona {
                 "Direccion: " + direccionCliente + "\n";
     }
 }
+

@@ -25,3 +25,4 @@ public class Vendedor extends Persona {
                 "Antiguedad: " + antiguedadVendedorAnios + "\n";
     }
 }
+
